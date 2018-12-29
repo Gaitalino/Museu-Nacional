@@ -25,8 +25,10 @@
 			</div>
 		</header>
 
+<!-- O conteudo do miolo da página foi dividido em duas partes (destaques e principal) para poder utilizar o display flex -->
+
 		<div id="destaques" class="container"> <!-- Inicio destaques -->
-			<article id="destaques-conteudo"> <!-- Inicio conteudo destaques -->
+			<article id="destaques-conteudo" class="alinha-flex"> <!-- Inicio conteudo destaques -->
 				<section class="alinhamento-principal">
 					<img id="imagem-museu" src="img/museu.png">
 				</section>
@@ -37,31 +39,91 @@
 			</article> <!-- Fim conteudo destaques -->
 		</div><!-- Fim destaques -->
 
+
 		<div id="principal" class="container"> <!-- Inicio principal -->
-			<article id="principal-conteudo"> <!-- Inicio conteudo destaques -->
-				<section id="principal-conteudo-principal" class="alinhamento-principal">
-					<div id="video-museu" class="alinhamento-principal">
-						<h2>VÍDEO: CONHEÇA O MUSEU</h2>
-						<iframe src="https://player.vimeo.com/video/281192904"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					</div>
-					<div id="mapa-museu" class="alinhamento-principal">
-						<h2>MAPA: ENCONTRE O MUSEU</h2>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu+Nacional+-+UFRJ!5e0!3m2!1spt-BR!2sbr!4v1546001891335" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-					<div id="mapa-museu" class="alinhamento-principal">
-						<h2>MAPA: ENCONTRE O MUSEU</h2>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu+Nacional+-+UFRJ!5e0!3m2!1spt-BR!2sbr!4v1546001891335" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-					<div id="mapa-museu" class="alinhamento-principal">
-						<h2>MAPA: ENCONTRE O MUSEU</h2>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu+Nacional+-+UFRJ!5e0!3m2!1spt-BR!2sbr!4v1546001891335" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
+			<article id="principal-conteudo" class="alinha-flex"> <!-- Inicio conteudo principal -->
+
+				<!-- O conteudo principal também foi divido em duas partes (conteudo-principal-central e conteudo-principal-lateral) para a utilização do display flex -->
+
+				<section id="principal-conteudo-central" class="alinhamento-principal">
+						<article class="alinha-flex"> <!-- Inicio conteudo principal central -->
+
+							<div class="flex-basis50">
+								<section id="video-museu" >
+									<div>
+										<h2>VÍDEO: CONHEÇA O MUSEU</h2>
+										<iframe src="https://player.vimeo.com/video/281192904" width="100%" height="250" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+										
+									</div>								
+								</section>
+							
+								<section  id="exposicoes" class="alinhamento-lateral">
+									<h2>exposições</h2>
+									<ul>
+										<ul>
+											<li><a href="">Os assustadores insetos</a></li>
+											<li><a href="">O crânio de Luzia, a mulher mais antiga do Brasil</a></li>
+											<li><a href="">Preguiça gigante e tigre-dentes-de-sabre</a></li>
+											<li><a href="">Plantas do Brasil Central</a></li>
+											<li><a href="">Teresa Cristina: A Imperatriz Arqueóloga</a></li>
+											<li><a href="">Arte com Dinossauros</a></li>
+											<li><a href="">Veja todos (65)</a></li>
+										</ul>
+									</ul>
+								</section>
+							</div>
+							
+							<div class="flex-basis50">
+								<section  id="mapa-museu" >
+									<div>
+										<h2>MAPA: ENCONTRE O MUSEU</h2>
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu+Nacional+-+UFRJ!5e0!3m2!1spt-BR!2sbr!4v1546001891335" width="100%" height="250"   frameborder="0" style="border:0" allowfullscreen></iframe>
+									</div>
+								</section>
+
+								<section  id="historia" class="alinhamento-lateral">
+										<h2>200 anos de história</h2>
+										<p>Numa ponta que avançava sobre o mar, porsteriormente conhecia como Ponta do Calabouço, entre as praias de Piaçava e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses construíram em 1603 a Fortaleza que hoje abriga o Museu Histórico Nacional.</p>
+										<a href="">Leia mais</a>
+								</section>
+							</div>
+							
+						</article> <!-- Fim conteudo principal central-->
 				</section>
 				
-				<aside  class="alinhamento-lateral">
-					<img id="imagem-depoimento" src="img/depoimento.png">
-				</aside>
-			</article> <!-- Fim conteudo destaques -->
+				<!-- Inicio conteudo principal central -->
+				<aside id="principal-conteudo-lateral"  class="alinhamento-lateral">
+					<div id="visita">
+						<h2>faça uma visita</h2>
+						<form>
+							<div>
+								<label for="data">Data</label>
+								<input type="date" name="data" id="data" placeholder="dd/mm/aaaa">
+								<label for="qtd-pessoas">Qtd pessoas</label>
+								<input type="number" name="qtd-pessoas" id="qtd-pessoas" placeholder="0">
+							</div>																	<input type="submit" value="Verificar disponibilidade" id="botao">					
+						</form>
+					</div>
+
+					<div id="galeria-fotos">
+						<div id="galeria-fotos-conteudo">
+							<div id="foto1">
+								<img src="img/imagem1.jpg">
+							</div>
+							<div id="foto2">
+								<img src="img/imagem2.jpg">
+							</div>
+							<div id="foto3">
+								<img src="img/imagem3.jpg">
+							</div>
+							<div id="foto4">
+								<img src="img/imagem4.jpg">
+							</div>
+						</div>
+					</div>
+				</aside> <!-- Fim conteudo principal central-->
+
+			</article> <!-- Fim conteudo principal --> -->
 		</div><!-- Fim destaques -->
 		
 

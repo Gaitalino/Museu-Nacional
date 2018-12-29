@@ -2,17 +2,26 @@
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica, sans-serif;
+		font-weight: 600;
 }
 .container{
 	width: 90%;
 	margin: auto;
 }
 a{
-		text-decoration: none;
+	text-decoration: none;
+	color: #B45F04;
 }
-
-
-
+ a:hover{
+	text-decoration: underline;
+}		
+body{
+	background-color: #F2F2F2;
+}
+h2{
+	text-transform: uppercase;
+	font-size: 16px;
+}
 
 
 
@@ -32,7 +41,7 @@ header a{
 	color: #FFF;
 }
 header span{
-	color: orange;
+	color: #B45F04;
 }
 header nav{
 	text-align: right;
@@ -43,13 +52,13 @@ header li{
 	font-weight: 300;
 }
 header nav a{
-	color: orange;
+	color: #B45F04;
 	font-weight: 600;
 	padding: 10px;
 }
 header nav a:hover{
 	color:#29220A ;
-	background-color: orange;
+	background-color: #B45F04;
 	text-decoration: none;
 	font-weight: 600;
 	padding: 10px;
@@ -59,6 +68,10 @@ header nav a:hover{
 
 
 /*Fim cabecalho*******************************************************/
+.alinha-flex{
+	display: flex;
+	justify-content: space-between;
+}
 .alinhamento-principal{
 	flex-basis: 69%; 
 	margin-right: 20px;
@@ -66,15 +79,14 @@ header nav a:hover{
 .alinhamento-lateral{
 	flex-basis: 39%; 
 }
-
+.flex-basis50{
+	flex-basis: 45%;
+}
 
 
 /*Inicio destaques******************************************************/
 #destaques-conteudo{
 	margin-top: -100px;
-	display: flex;
-	justify-content: space-between;
-	height:auto;
 }
 
 #imagem-museu{
@@ -87,20 +99,79 @@ header nav a:hover{
 /*Fim destaques******************************************************/
 
 /*Inicio principal******************************************************/
+
+			/*central*/
 #principal-conteudo{
-
-	display: flex;
-	justify-content: space-between;
-
-}
-#principal-conteudo-principal div{
-	width: 47%;
-	height: auto;
-	background-color: red;
-	float: left;
 	margin-top: 20px;
 }
 #video-museu{
-	
+	margin-bottom: 50px;
 }
+#historia{
+	margin-bottom: 30px;
+}
+#historia p{
+	margin-bottom: 10px;
+}
+#exposicoes{
+	margin-bottom: 30px;
+	height: 250px;
+}
+#exposicoes ul{
+	margin-left: 20px;
+}
+
+#mapa-museu{
+	margin-bottom: 50px;
+}
+#principal-conteudo-central article{
+	justify-content: space-around;
+}
+#principal-conteudo-central h2{
+	color: green;
+	padding-bottom: 20px;
+}
+#principal-conteudo-central ul{
+	list-style: disc;
+}
+								/*lateral*/
+
+#visita{
+	padding: 0 40px;
+	padding-bottom: 40px;
+	background-color: #989E90;
+}		
+#visita h2{
+	color: #B45F04;
+	padding: 10px;
+
+}	
+#visita label{
+	font-weight: 500;
+}
+#visita form{
+	text-align: center;
+}
+#visita form div{
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+#data{
+	width: 147px;
+	font-weight: 500;
+}					
+#qtd-pessoas{
+	width: 30px;
+	font-weight: 500;
+}	
+#botao{
+	padding: 15px 50px;
+	color: #FFF;
+	background-color: #757772;	
+}
+#botao:hover{
+	cursor: pointer;
+	background-color: #757792
+}
+
 /*Fim principal******************************************************/
