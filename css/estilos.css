@@ -22,6 +22,9 @@ h2{
 	text-transform: uppercase;
 	font-size: 16px;
 }
+.clear{
+	clear: both;
+}
 
 
 
@@ -104,6 +107,7 @@ header nav a:hover{
 #principal-conteudo{
 	margin-top: 20px;
 }
+
 #video-museu{
 	margin-bottom: 50px;
 }
@@ -141,7 +145,7 @@ header nav a:hover{
 	padding-bottom: 40px;
 	background-color: #989E90;
 }		
-#visita h2{
+#principal-conteudo-lateral h2{
 	color: #B45F04;
 	padding: 10px;
 
@@ -173,5 +177,62 @@ header nav a:hover{
 	cursor: pointer;
 	background-color: #757792
 }
+#galeria-fotos{
+	background-color: #E3E8DC;
+}
+#galeria-fotos-conteudo{
+	margin-left: 10%;
+	margin-bottom: 10%;
+}
+#fotos{
 
+	background-color: #E3E8DC;
+	height: 100%;
+}
+#fotos div{
+	width: 35%;
+	margin: 20px;
+	text-align: center;
+	background-position: center center;
+	height: auto;
+	background-image: url('../img/fundo-foto.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	float: left;
+}
+#fotos img{
+	padding: 10px 10px;
+	width: 70%;
+
+}
 /*Fim principal******************************************************/
+
+/*Inicio rodapé******************************************************/
+#rodape{
+	background-image: url('../img/fundo-rodape.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+#rodape nav{
+	padding-top: 30px;
+	}
+#rodape ul{
+	list-style: none;
+	text-align: center;
+	margin: auto;
+}
+#rodape ul li{
+	margin: 20px;
+	display: inline;
+}
+#rodape{
+	font-size: 13px;
+}
+#rodape p{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+
+/*Fim rodapé******************************************************/
